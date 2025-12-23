@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScriptを使ったサイト制作</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Noto+Serif+JP:wght@200..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="shortcut icon" href="favicon.png">
+    <link rel="apple-touch-icon" href="touch-icon.png" sizes="192x192">
+
+</head>
+
+<body>
+    <header>
+        <h1><a href="#">Felica<span>Donut&Salad</span></a></h1>
+        <nav class="pc-nav">
+            <ul>
+                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#item">Item</a></li>
+                <li><a href="#access">Access</a></li>
+                <li><a href="#"><img src="img/facebook-brands-solid-full.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/instagram-brands-solid-full.svg" alt=""></a></li>
+            </ul>
+        </nav><!-- /.pc-nav -->
+
+    <button class="hamburger hamburger--spin" id="ham-btn">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    </header>
+
+    <nav id="sp-nav">
+        <ul>
+            <li><a href="#news">News</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#item">Item</a></li>
+            <li><a href="#access">Access</a></li>
+            <li><a href="#"><img src="img/facebook-brands-solid-full.svg" alt=""></a></li>
+            <li><a href="#"><img src="img/instagram-brands-solid-full.svg" alt=""></a></li>
+        </ul>
+    </nav><!-- /.sp-nav -->
+
+
+
+    <main>
+        <div class="main-visual">
+            <ul class="bxslider">
+                <li><img src="img/main-01.webp" alt=""></li>
+                <li><img src="img/main-02.webp" alt=""></li>
+                <li><img src="img/main-03.webp" alt=""></li>
+                <li><img src="img/main-04.webp" alt=""></li>
+            </ul>
+        </div>
+
+        <section class="page-section" id="news">
+            <h2 data-ja="お知らせ">News</h2>
+
+            <dl id="news-list">
+
+            </dl>
+
+        </section>
+        <section class="page-section" id="about">
+            <h2 data-ja="私たちについて">About</h2>
+            <div class="about-wrapper" data-aos="fade-up" data-aos-delay="200">
+                <h3>自然の恵みを味わう<br>
+                    おいしいご褒美</h3>
+                <p>厳選されたオーガニック素材で作るフレッシュなサラダと、<br>職人の手仕事で焼き上げたドーナツ。<br>
+                    口にした瞬間、自然の甘みが広がります。毎日の暮らしに、ちょっとした幸せを。</p>
+            </div><!-- /.about-wrapper -->
+
+
+        </section>
+        <section class="page-section" id="item">
+            <h2 data-ja="商品について">Item</h2>
+            <ul class="modal">
+                <li><a href="img/item-01.webp" data-lightbox="item"><img src="img/item-01.webp" alt=""></a></li>
+                <li><a href="img/item-02.webp" data-lightbox="item"><img src="img/item-02.webp" alt=""></a></li>
+                <li><a href="img/item-03.webp" data-lightbox="item"><img src="img/item-03.webp" alt=""></a></li>
+            </ul>
+        </section>
+
+        <div class="parallax"></div>
+
+        <section class="page-section" id="access">
+            <h2 data-ja="店舗について">Access</h2>
+
+            <div class="access-wrapper">
+                <div class="g-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.9454666378524!2d139.71174027578985!3d35.72755967257238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f6.1!3m3!1m2!1s0x60188d68f6cfe057%3A0xddd17dcd7ecaf745!2z6LGK5bO25Yy656uL5Y2X5rGg6KKL5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1763430282355!5m2!1sja!2sjp"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div><!-- /.g-map -->
+                <div class="info-wrapper">
+                    <dl>
+                        <dt>Access</dt>
+                        <dd>東京都豊島区南池袋1-1-1</dd>
+                        <dt>Tel</dt>
+                        <dd><a href="tel:0312345678" class="tel-num">03-1234-5678</a></dd>
+                        <dt>Mail</dt>
+                        <dd><a href="mailto:example@email.com">example@email.com</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>Open</dt>
+                        <dd>10:00 - 19:00</dd>
+                        <dt>定休日</dt>
+                        <dd>年末年始</dd>
+                        <dt>駐車場</dt>
+                        <dd>あり(2台)</dd>
+                    </dl>
+                </div><!-- /.info-wrapper -->
+            </div><!-- /.access-wrapper -->
+
+        </section>
+
+        <a href="#" class="to-shop">オンラインショップへ</a>
+
+    </main>
+    <ul class="to-shop-wrapper">
+        <li><a href="#">SHOP1</a></li>
+        <li><a href="#">SHOP2</a></li>
+        <li><a href="#">SHOP3</a></li>
+        <li><a href="#">SHOP4</a></li>
+        <li><a href="#">SHOP5</a></li>
+
+    </ul><!-- /.to-shop-wrapper -->
+
+    <footer>
+        <p class="footer-logo"><a href="#">Felica<span>Donut&Salad</span></a></p>
+        <p class="copy"><small>&copy; <span id="this-year"></span></small></p>
+
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/jquery.bxslider.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script>
+        $(function () {
+            //bxslider
+            $('.bxslider').bxSlider({
+                mode: 'fade',
+                auto: true, //trueはon
+                controls: false, //falseはoff
+                speed: 2000, //画像の切り替わる時間
+                pause: 2000, //画像が止まっている時間
+                pager: false,
+                touchEnabled: false, //スマホ時のスライド内のスクロールを無効
+            });
+
+            //news.txtをajaxで呼び出す
+            $('#news-list').load('news.txt');
+
+            //aos関数を呼び出す
+            AOS.init({
+                once: true,
+                disable: 'mobile', //mobileでは無効
+            });
+
+            //lightboxのオプション
+            lightbox.option({
+                'wrapAround': true,
+            })
+
+            //西暦を取得して表示
+            const fullYear = new Date().getFullYear();
+            console.log(fullYear);
+
+            // this-year
+            if (fullYear > 2025) {
+                $('#this-year').text('2025 - ' + fullYear);
+            } else {
+                $('#this-year').text(fullYear);
+            }
+
+            //ハンバーガーボタン
+            //#ham-btnをon.clickしたら
+            $('#ham-btn').on('click',function(){
+                $(this).toggleClass('is-active');
+            //#sp-navをfadeToggleさせる
+            $('#sp-nav').fadeToggle(300);
+            });
+
+            //#sp-nav aをon.clickしたら
+            $('#sp-nav a').on('click',function(){
+                $('#sp-nav').fadeOut(300);
+                $('#ham-btn').removeClass('is-active');
+            });
+
+        });
+
+
+    </script>
+</body>
+
+</html>
